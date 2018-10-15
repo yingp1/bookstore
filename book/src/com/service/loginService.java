@@ -38,7 +38,7 @@ public class loginService
 		
 		String result="no";
 		
-		if(userType==0)//系统管理员登陆
+		if(userType==0)//脧碌脥鲁鹿脺脌铆脭卤碌脟脗陆
 		{
 			String sql="from TAdmin where userName=? and userPw=?";
 			Object[] con={userName,userPw};
@@ -53,8 +53,8 @@ public class loginService
 				 HttpSession session=ctx.getSession(); 
 				 TAdmin admin=(TAdmin)adminList.get(0);
 				 session.setAttribute("userType", 0);
-	             session.setAttribute("admin", admin);
-	             result="yes";
+	             		 session.setAttribute("admin", admin);
+	             		 result="yes";
 			}
 		}
 		if(userType==1)
